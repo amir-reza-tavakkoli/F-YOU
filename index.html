@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #ffa800;
+        }
+
+        main {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        #inp {
+            border-color: orange;
+            box-sizing: border-box;
+            text-decoration: none;
+            padding: 12px;
+            font-size: 18px;
+            font-family: 'Source Sans Pro', sans-serif;
+
+        }
+
+        #inp:focus {
+            margin: 2px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.35em 1.2em;
+            border: 0.1em solid #FFFFFF;
+            margin: 0.3em 0.3em 0.3em 0;
+            border-radius: 0.22em;
+            border-color: orange;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: 500;
+            color: #000;
+            text-align: center;
+            transition: all 0.2s;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        button:hover {
+            color: #292323b6;
+            background-color: #FFFFFF;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        #p {
+            font-size: 44px;
+            font-weight: 600;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    </style>
+    <script defer>
+        function change() {
+            let c = document.getElementById("inp").value;
+
+            let oldValue = document.getElementById("p").innerText = `fuck you ${c}!`;
+        }</script>
+    <title>F YOU</title>
+</head>
+
+<body>
+    <main role="main">
+        <h1 style="display: none;">FUCK YOU APPLICATION</h1>
+        <h2 style="display: none;">enter your name in the input field and hit to see the result</h1>
+            <p>enter yor name!</p>
+            <br>
+            <input type="text" name="" id="inp" value="" placeholder="here">
+            <button type="button" onclick="change();" id="but" class="button">hit</button>
+            <h2 id="p" aria-live="assertive"></h2>
+
+    </main>
+</body>
+
+</html>
